@@ -1,0 +1,256 @@
+(venv) ➜  erav3-session8 git:(main) ✗ python train.py
+
+Model Summary:
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 12, 32, 32]             336
+       BatchNorm2d-2           [-1, 12, 32, 32]              24
+              ReLU-3           [-1, 12, 32, 32]               0
+         ConvBlock-4           [-1, 12, 32, 32]               0
+            Conv2d-5           [-1, 16, 32, 32]           1,744
+       BatchNorm2d-6           [-1, 16, 32, 32]              32
+              ReLU-7           [-1, 16, 32, 32]               0
+         ConvBlock-8           [-1, 16, 32, 32]               0
+            Conv2d-9           [-1, 16, 32, 32]             160
+    DepthwiseConv-10           [-1, 16, 32, 32]               0
+           Conv2d-11           [-1, 24, 32, 32]             408
+    PointwiseConv-12           [-1, 24, 32, 32]               0
+      BatchNorm2d-13           [-1, 24, 32, 32]              48
+             ReLU-14           [-1, 24, 32, 32]               0
+        ConvBlock-15           [-1, 24, 32, 32]               0
+           Conv2d-16           [-1, 32, 32, 32]           6,944
+      BatchNorm2d-17           [-1, 32, 32, 32]              64
+             ReLU-18           [-1, 32, 32, 32]               0
+        ConvBlock-19           [-1, 32, 32, 32]               0
+           Conv2d-20           [-1, 48, 32, 32]          13,872
+      BatchNorm2d-21           [-1, 48, 32, 32]              96
+             ReLU-22           [-1, 48, 32, 32]               0
+        ConvBlock-23           [-1, 48, 32, 32]               0
+           Conv2d-24           [-1, 64, 32, 32]          27,712
+      BatchNorm2d-25           [-1, 64, 32, 32]             128
+             ReLU-26           [-1, 64, 32, 32]               0
+        ConvBlock-27           [-1, 64, 32, 32]               0
+           Conv2d-28           [-1, 96, 32, 32]          55,392
+      BatchNorm2d-29           [-1, 96, 32, 32]             192
+             ReLU-30           [-1, 96, 32, 32]               0
+        ConvBlock-31           [-1, 96, 32, 32]               0
+AdaptiveAvgPool2d-32             [-1, 96, 1, 1]               0
+          Flatten-33                   [-1, 96]               0
+           Linear-34                   [-1, 10]             970
+================================================================
+Total params: 108,122
+Trainable params: 108,122
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 9.56
+Params size (MB): 0.41
+Estimated Total Size (MB): 9.99
+----------------------------------------------------------------
+
+Total Parameters: 108,122
+Files already downloaded and verified
+/Users/Tushar_Patidar/scrap/erav3-session8/utils/data_loader.py:36: UserWarning: Argument 'fill_value' is not valid and will be ignored.
+  A.CoarseDropout(
+Files already downloaded and verified
+
+Epoch: 0
+Loss=1.6005 Batch_id=390 Accuracy=39.40: 100%|██████████| 391/391 [00:53<00:00,  7.35it/s]
+Test set: Average loss: 0.0110, Accuracy: 49.02%
+Best accuracy so far: 49.02%
+
+Epoch: 1
+Loss=1.2891 Batch_id=390 Accuracy=52.60: 100%|██████████| 391/391 [00:51<00:00,  7.56it/s]
+Test set: Average loss: 0.0093, Accuracy: 57.97%
+Best accuracy so far: 57.97%
+
+Epoch: 2
+Loss=1.2635 Batch_id=390 Accuracy=57.97: 100%|██████████| 391/391 [00:52<00:00,  7.51it/s]
+Test set: Average loss: 0.0145, Accuracy: 45.00%
+Best accuracy so far: 57.97%
+
+Epoch: 3
+Loss=1.0541 Batch_id=390 Accuracy=62.13: 100%|██████████| 391/391 [00:51<00:00,  7.54it/s]
+Test set: Average loss: 0.0118, Accuracy: 52.84%
+Best accuracy so far: 57.97%
+
+Epoch: 4
+Loss=0.8501 Batch_id=390 Accuracy=65.01: 100%|██████████| 391/391 [00:51<00:00,  7.59it/s]
+Test set: Average loss: 0.0084, Accuracy: 63.34%
+Best accuracy so far: 63.34%
+
+Epoch: 5
+Loss=1.0758 Batch_id=390 Accuracy=66.61: 100%|██████████| 391/391 [00:51<00:00,  7.52it/s]
+Test set: Average loss: 0.0128, Accuracy: 54.39%
+Best accuracy so far: 63.34%
+
+Epoch: 6
+Loss=0.8352 Batch_id=390 Accuracy=68.31: 100%|██████████| 391/391 [00:51<00:00,  7.55it/s]
+Test set: Average loss: 0.0122, Accuracy: 54.25%
+Best accuracy so far: 63.34%
+
+Epoch: 7
+Loss=0.7278 Batch_id=390 Accuracy=69.32: 100%|██████████| 391/391 [00:51<00:00,  7.57it/s]
+Test set: Average loss: 0.0080, Accuracy: 67.82%
+Best accuracy so far: 67.82%
+
+Epoch: 8
+Loss=0.9864 Batch_id=390 Accuracy=70.19: 100%|██████████| 391/391 [00:52<00:00,  7.49it/s]
+Test set: Average loss: 0.0077, Accuracy: 69.00%
+Best accuracy so far: 69.00%
+
+Epoch: 9
+Loss=0.7927 Batch_id=390 Accuracy=70.69: 100%|██████████| 391/391 [00:51<00:00,  7.57it/s]
+Test set: Average loss: 0.0073, Accuracy: 67.21%
+Best accuracy so far: 69.00%
+
+Epoch: 10
+Loss=1.0273 Batch_id=390 Accuracy=71.20: 100%|██████████| 391/391 [00:51<00:00,  7.54it/s]
+Test set: Average loss: 0.0099, Accuracy: 60.52%
+Best accuracy so far: 69.00%
+
+Epoch: 11
+Loss=0.6595 Batch_id=390 Accuracy=71.69: 100%|██████████| 391/391 [00:52<00:00,  7.50it/s]
+Test set: Average loss: 0.0100, Accuracy: 59.11%
+Best accuracy so far: 69.00%
+
+Epoch: 12
+Loss=0.6745 Batch_id=390 Accuracy=72.23: 100%|██████████| 391/391 [00:51<00:00,  7.55it/s]
+Test set: Average loss: 0.0055, Accuracy: 75.77%
+Best accuracy so far: 75.77%
+
+Epoch: 13
+Loss=0.7139 Batch_id=390 Accuracy=72.77: 100%|██████████| 391/391 [00:51<00:00,  7.52it/s]
+Test set: Average loss: 0.0070, Accuracy: 68.95%
+Best accuracy so far: 75.77%
+
+Epoch: 14
+Loss=1.0563 Batch_id=390 Accuracy=72.80: 100%|██████████| 391/391 [00:51<00:00,  7.53it/s]
+Test set: Average loss: 0.0064, Accuracy: 72.90%
+Best accuracy so far: 75.77%
+
+Epoch: 15
+Loss=0.7937 Batch_id=390 Accuracy=73.45: 100%|██████████| 391/391 [00:51<00:00,  7.58it/s]
+Test set: Average loss: 0.0061, Accuracy: 74.55%
+Best accuracy so far: 75.77%
+
+Epoch: 16
+Loss=0.7548 Batch_id=390 Accuracy=73.74: 100%|██████████| 391/391 [00:51<00:00,  7.61it/s]
+Test set: Average loss: 0.0066, Accuracy: 70.80%
+Best accuracy so far: 75.77%
+
+Epoch: 17
+Loss=0.8126 Batch_id=390 Accuracy=74.12: 100%|██████████| 391/391 [00:51<00:00,  7.56it/s]
+Test set: Average loss: 0.0067, Accuracy: 73.28%
+Best accuracy so far: 75.77%
+
+Epoch: 18
+Loss=0.7183 Batch_id=390 Accuracy=74.18: 100%|██████████| 391/391 [00:51<00:00,  7.60it/s]
+Test set: Average loss: 0.0067, Accuracy: 71.31%
+Best accuracy so far: 75.77%
+
+Epoch: 19
+Loss=0.6751 Batch_id=390 Accuracy=74.93: 100%|██████████| 391/391 [00:51<00:00,  7.58it/s]
+Test set: Average loss: 0.0062, Accuracy: 74.48%
+Best accuracy so far: 75.77%
+
+Epoch: 20
+Loss=0.7176 Batch_id=390 Accuracy=75.57: 100%|██████████| 391/391 [00:51<00:00,  7.52it/s]
+Test set: Average loss: 0.0084, Accuracy: 69.07%
+Best accuracy so far: 75.77%
+
+Epoch: 21
+Loss=0.5832 Batch_id=390 Accuracy=75.86: 100%|██████████| 391/391 [00:51<00:00,  7.57it/s]
+Test set: Average loss: 0.0050, Accuracy: 78.68%
+Best accuracy so far: 78.68%
+
+Epoch: 22
+Loss=0.6569 Batch_id=390 Accuracy=76.61: 100%|██████████| 391/391 [00:51<00:00,  7.59it/s]
+Test set: Average loss: 0.0049, Accuracy: 78.19%
+Best accuracy so far: 78.68%
+
+Epoch: 23
+Loss=0.6099 Batch_id=390 Accuracy=76.96: 100%|██████████| 391/391 [00:51<00:00,  7.56it/s]
+Test set: Average loss: 0.0057, Accuracy: 75.43%
+Best accuracy so far: 78.68%
+
+Epoch: 24
+Loss=0.8026 Batch_id=390 Accuracy=77.73: 100%|██████████| 391/391 [00:51<00:00,  7.60it/s]
+Test set: Average loss: 0.0048, Accuracy: 79.00%
+Best accuracy so far: 79.00%
+
+Epoch: 25
+Loss=0.7756 Batch_id=390 Accuracy=78.43: 100%|██████████| 391/391 [00:51<00:00,  7.56it/s]
+Test set: Average loss: 0.0048, Accuracy: 79.49%
+Best accuracy so far: 79.49%
+
+Epoch: 26
+Loss=0.5607 Batch_id=390 Accuracy=79.03: 100%|██████████| 391/391 [00:51<00:00,  7.55it/s]
+Test set: Average loss: 0.0040, Accuracy: 82.77%
+Best accuracy so far: 82.77%
+
+Epoch: 27
+Loss=0.5499 Batch_id=390 Accuracy=79.65: 100%|██████████| 391/391 [00:51<00:00,  7.65it/s]
+Test set: Average loss: 0.0041, Accuracy: 82.53%
+Best accuracy so far: 82.77%
+
+Epoch: 28
+Loss=0.6080 Batch_id=390 Accuracy=80.67: 100%|██████████| 391/391 [00:50<00:00,  7.67it/s]
+Test set: Average loss: 0.0038, Accuracy: 83.37%
+Best accuracy so far: 83.37%
+
+Epoch: 29
+Loss=0.5967 Batch_id=390 Accuracy=81.00: 100%|██████████| 391/391 [00:51<00:00,  7.59it/s]
+Test set: Average loss: 0.0035, Accuracy: 84.81%
+Best accuracy so far: 84.81%
+
+Epoch: 30
+Loss=0.5737 Batch_id=390 Accuracy=81.81: 100%|██████████| 391/391 [00:52<00:00,  7.39it/s]
+Test set: Average loss: 0.0034, Accuracy: 85.61%
+Best accuracy so far: 85.61%
+
+Epoch: 31
+Loss=0.4756 Batch_id=390 Accuracy=82.86: 100%|██████████| 391/391 [00:52<00:00,  7.50it/s]
+Test set: Average loss: 0.0033, Accuracy: 85.82%
+Best accuracy so far: 85.82%
+
+Epoch: 32
+Loss=0.4746 Batch_id=390 Accuracy=83.56: 100%|██████████| 391/391 [00:51<00:00,  7.55it/s]
+Test set: Average loss: 0.0029, Accuracy: 87.02%
+Best accuracy so far: 87.02%
+
+Epoch: 33
+Loss=0.4988 Batch_id=390 Accuracy=84.54: 100%|██████████| 391/391 [00:51<00:00,  7.52it/s]
+Test set: Average loss: 0.0027, Accuracy: 88.40%
+Best accuracy so far: 88.40%
+
+Epoch: 34
+Loss=0.4939 Batch_id=390 Accuracy=85.03: 100%|██████████| 391/391 [00:52<00:00,  7.50it/s]
+Test set: Average loss: 0.0026, Accuracy: 88.44%
+Best accuracy so far: 88.44%
+
+Epoch: 35
+Loss=0.4178 Batch_id=390 Accuracy=85.59: 100%|██████████| 391/391 [00:52<00:00,  7.49it/s]
+Test set: Average loss: 0.0026, Accuracy: 88.87%
+Best accuracy so far: 88.87%
+
+Epoch: 36
+Loss=0.2932 Batch_id=390 Accuracy=86.08: 100%|██████████| 391/391 [00:52<00:00,  7.47it/s]
+Test set: Average loss: 0.0025, Accuracy: 89.25%
+Best accuracy so far: 89.25%
+
+Epoch: 37
+Loss=0.4880 Batch_id=390 Accuracy=86.53: 100%|██████████| 391/391 [00:51<00:00,  7.54it/s]
+Test set: Average loss: 0.0025, Accuracy: 89.24%
+Best accuracy so far: 89.25%
+
+Epoch: 38
+Loss=0.3374 Batch_id=390 Accuracy=87.13: 100%|██████████| 391/391 [00:52<00:00,  7.52it/s]
+Test set: Average loss: 0.0024, Accuracy: 89.21%
+Best accuracy so far: 89.25%
+
+Epoch: 39
+Loss=0.3315 Batch_id=390 Accuracy=86.99: 100%|██████████| 391/391 [00:51<00:00,  7.53it/s]
+Test set: Average loss: 0.0024, Accuracy: 89.35%
+Best accuracy so far: 89.35%
